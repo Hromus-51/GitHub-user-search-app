@@ -35,6 +35,7 @@ Users should be able to:
 - HTML5 
 - [SASS/SCSS](https://sass-lang.com/)
 - [clsx](https://www.npmjs.com/package/clsx)
+- [react-responsive](https://www.npmjs.com/package/react-responsive)
 - [Framer Motion](https://www.framer.com/motion/)
 - [Theme UI](https://theme-ui.com/)
 - [Redux Toolkit](https://redux-toolkit.js.org/)
