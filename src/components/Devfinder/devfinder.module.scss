@@ -1,0 +1,48 @@
+.devfinder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    @media (max-width: 768px) {
+        display: block;
+        padding: 140px 0px 100px;
+        height: auto;
+    }
+
+    @media (max-width: 425px) {
+        padding: 31px 0px 79px;
+    }
+
+    .container {
+        flex: 0 1 1200px;
+        padding: 0 24px;
+
+        .userCard {
+            margin: 0 auto;
+            max-width: 730px;
+
+            @media (max-width: 768px) {
+                max-width: 573px;
+            }
+        }
+    }
+
+    .header {
+        &:not(:last-child) {
+            margin-bottom: 36px;
+        }
+    }
+
+    .search {
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 425px) {
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}

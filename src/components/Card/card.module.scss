@@ -1,0 +1,255 @@
+.card {
+    display: flex;
+    column-gap: 37px;
+
+    padding: 44px 48px 48px;
+    border-radius: 15px;
+
+    @media (max-width: 767px) {
+        padding: 40px;
+        display: block;
+    }
+
+    @media (max-width: 425px) {
+        padding: 32px 24px 48px;
+    }
+
+    .avatarContainer {
+        flex: 0 0 117px;
+
+        height: 117px;
+        border-radius: 50%;
+
+        overflow: hidden;
+
+        @media (max-width: 425px) {
+            flex: 0 0 70px;
+            height: 70px;
+        }
+
+        .avatar {
+            width: 100%;
+        }
+    }
+
+    .name {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 39px;
+
+        &:not(:last-child) {
+            margin-bottom: 2px;
+        }
+
+        @media (max-width: 425px) {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+
+            &:not(:last-child) {
+                margin-bottom: none;
+            }
+        }
+    }
+
+    .linkName {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+
+        color: #0079FF;
+
+        @media (max-width: 767px) {
+            &:not(:last-child) {
+                margin-bottom: 4px;
+            }
+        }
+
+        @media (max-width: 425px) {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 19px;
+
+            &:not(:last-child) {
+                margin-bottom: 6px;
+            }
+        }
+    }
+
+    .joined {
+        align-self: center;
+        justify-self: flex-end;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22px;
+
+        @media (max-width: 425px) {
+            font-size: 13px;
+            line-height: 19px;
+        }
+    }
+
+    .userDates {
+        flex: 0.66 1 480px;
+
+        .cardHeader {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            column-gap: 10px;
+            row-gap: 2px;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+        .cardHeaderTablet {
+            display: flex;
+            column-gap: 41px;
+            align-items: center;
+
+            &:not(:last-child) {
+                margin-bottom: 24px;
+            }
+
+            @media (max-width: 425px) {
+                column-gap: 19px;
+
+                &:not(:last-child) {
+                    margin-bottom: 33px;
+                }
+            }
+        }
+
+        .bio {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 25px;
+
+            &:not(:last-child) {
+                margin-bottom: 32px;
+            }
+
+            @media (max-width: 425px) {
+                font-size: 13px;
+                font-weight: 400;
+
+                &:not(:last-child) {
+                    margin-bottom: 23px;
+                }
+            }
+        }
+
+        .numericData {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 10px;
+
+            padding: 15px 32px 17px;
+            border-radius: 10px;
+
+            &:not(:last-child) {
+                margin-bottom: 37px;
+            }
+
+            @media (max-width: 767px) {
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+            }
+
+            @media (max-width: 425px) {
+                padding: 18px 14px;
+
+                &:not(:last-child) {
+                    margin-bottom: 24px;
+                    column-gap: 2px;
+                }
+            }
+
+            .column {
+                .numericTitle {
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 19px;
+
+                    &:not(:last-child) {
+                        margin-bottom: 2px;
+                    }
+
+                    @media (max-width: 425px) {
+                        font-size: 11px;
+                        line-height: 16px;
+                        text-align: center;
+                    }
+                }
+
+                .numbers {
+                    font-size: 22px;
+                    font-weight: 700;
+                    line-height: 33px;
+
+                    @media (max-width: 425px) {
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            column-gap: 19px;
+            row-gap: 19px;
+
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 22px;
+
+            @media (max-width: 425px) {
+                display: block;
+                font-size: 13px;
+                line-height: 19px;
+            }
+
+            .linksItem {
+                position: relative;
+                padding-left: 36px;
+
+                @media (max-width: 425px) {
+                    display: block;
+                    font-size: 13px;
+                    line-height: 19px;
+
+                    &:not(:last-child) {
+                        margin-bottom: 17px;
+                        padding-left: 33px;
+                    }
+                }
+
+                .icon {
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                .link {
+                    color: inherit;
+                    transition: all 0.2s ease 0s;
+
+                    &_hover {
+                        &:hover {
+                            border-bottom: 1px solid currentColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
