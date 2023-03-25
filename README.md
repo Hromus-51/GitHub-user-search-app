@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- [Live Site](https://hromus-51.github.io/faq-accordion-card/)
+- [Live Site](https://hromus-51.github.io/github-user-search-app/)
 
 ### Built with
 
